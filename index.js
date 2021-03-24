@@ -37,9 +37,10 @@ app.get('/dictionarysearch/:language/:wordId', async (req, res) => {
     res.send(response.data);
   }
   catch(err){
-    console.log("Error response data", err.response.data);
-    console.log("Error response status", err.response.status);
-    console.log("Error response headers", err.response.headers);
+    // console.log("Error response data", err.response.data);
+    // console.log("Error response status", err.response.status);
+    // console.log("Error response headers", err.response.headers);
+    res.send(err.response.data);
   }
 
 
